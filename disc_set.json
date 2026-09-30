@@ -1,0 +1,18 @@
+{
+  "disc_count": 1,
+  "verdict": "single",
+  "differing_program_fields": [],
+  "warnings": [],
+  "discs": [
+    {
+      "index": 1,
+      "cue_name": "Die Hard Trilogy 2 - Viva Las Vegas (USA).cue",
+      "cue_path": "disc/Die Hard Trilogy 2 - Viva Las Vegas (USA).cue",
+      "serial": "SLUS-01015",
+      "boot_exe": "slus_010.15",
+      "entry_pc": "0x800695F4",
+      "track_count": 1,
+      "required_disc_fp": "3cecda02c74c918af85e2869483ab798c60fc341f29494a5f44f088cb4769eb8"
+    }
+  ]
+}

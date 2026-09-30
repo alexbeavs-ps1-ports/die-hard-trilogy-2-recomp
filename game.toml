@@ -1,0 +1,55 @@
+
+[game]
+name = "Die Hard Trilogy 2: Viva Las Vegas"
+id = "SLUS-01015"
+players = 1
+exe = "disc/slus_010.15"
+disc = "disc/Die Hard Trilogy 2 - Viva Las Vegas (USA).cue"
+load_address = "0x80010000"
+entry_pc = "0x800695F4"
+text_size = "0x0007C800"
+stack_base = "0x801FFFF0"
+
+[prepare_disc]
+out_dir = "disc"
+bin_name = "Die Hard Trilogy 2 - Viva Las Vegas (USA).bin"
+cue_name = "Die Hard Trilogy 2 - Viva Las Vegas (USA).cue"
+boot_exe = "slus_010.15"
+known_sizes = [734148576]
+known_md5 = [
+  "4542af8da15dafc03f8da302c9c9aae4",
+]
+known_sha1 = [
+  "f725a1fdcb157647bde65f907c252ac866937a8d",
+]
+known_crc32 = [
+  "d077b970",
+]
+
+[recompiler]
+bios_config = "psxrecomp/bios/SCPH1001.toml"
+seeds = "seeds/ghidra_funcs.txt"
+out_dir = "generated"
+strict = true
+
+[runtime]
+openbios = false
+bios_hle = false
+window_title = "Die Hard Trilogy 2: Viva Las Vegas Recompiled"
+memcard_dir = "saves"
+overlay_cache = true
+
+[video]
+renderer = "opengl"
+aspect_ratio = "4:3"
+
+[controller]
+default_mode = "digital"
+
+[netplay]
+require_cue = true
+required_tracks = 1
+required_disc_fp = "3cecda02c74c918af85e2869483ab798c60fc341f29494a5f44f088cb4769eb8"
+
+[pgo]
+enabled = false

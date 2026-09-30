@@ -1,0 +1,27 @@
+[project]
+title = "Die Hard Trilogy 2: Viva Las Vegas"
+region = "USA"
+track = "recompilation"
+status = "source_prepared_unqualified"
+
+[retail_identity]
+disc_count = 1
+serials = ["SLUS-01015"]
+executable_paths = ["slus_010.15"]
+executable_sha256 = "9defd443265654db9b415d6d5d4dda7a62790b719f9889e894b97035eb0bd1de"
+load_address = "0x80010000"
+entry_point = "0x800695F4"
+
+[bios]
+profile = "SCPH1001"
+sha256 = "71af94d1e47a68c11e8fdb9f8368040601514a42a5a399cda48c7d3bff1e99d3"
+
+[framework]
+name = "psxrecomp"
+qualification = "pending T168 and shared canaries"
+template_commit = "77fc84d18cd341ba0c0feb68a63f0904f8c467f0"
+
+[release]
+target_version = "v0.4.0"
+private_only = true
+profile_status = "CI training pending"
